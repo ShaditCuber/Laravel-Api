@@ -9,5 +9,6 @@ class Pokemon extends Model
 {
     use HasFactory;
     // decirle que tiene una tabla relacionada
+    
     protected $table = 'pokemon';
 }
