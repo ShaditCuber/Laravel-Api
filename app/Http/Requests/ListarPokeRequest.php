@@ -8,7 +8,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Response;
 
 
-class PokemonRequest extends FormRequest
+class ListarPokeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -28,9 +28,7 @@ class PokemonRequest extends FormRequest
     public function rules()
     {
         return [
-            "id" => "nullable|exists:pokemon,id|integer",
-            "nombre" => "required|unique:pokemon|string", 
-            // "despide" => "required",
+            "id" => "required|exists:pokemon,id|integer",
         ];
     }
 

@@ -19,3 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/pokemon', [PokemonController::class, 'index']);
+Route::post('/actualizarPokemon', [PokemonController::class, 'actualizarPokemon']);
+Route::get('/listarPokemon', [PokemonController::class, 'listarPokemon']);
+Route::get('/listarPokemones', [PokemonController::class, 'listarPokemones']);
+Route::delete('/deletePokemon', [PokemonController::class, 'deletePokemon']);
