@@ -23,3 +23,4 @@ Route::post('/actualizarPokemon', [PokemonController::class, 'actualizarPokemon'
 Route::get('/listarPokemon', [PokemonController::class, 'listarPokemon']);
 Route::get('/listarPokemones', [PokemonController::class, 'listarPokemones']);
 Route::delete('/deletePokemon', [PokemonController::class, 'deletePokemon']);
+Route::get('/cargarPokemones', [PokemonController::class, 'cargarPokemones']);
